@@ -1,0 +1,7 @@
+{
+  "player_color": "white",
+  "stockfish_path": "/usr/games/stockfish",
+  "stockfish_depth": 15,
+  "hotkey": "ctrl+shift+x",
+  "screenshot_delay": 0.5
+}
