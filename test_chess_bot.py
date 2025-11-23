@@ -5,6 +5,7 @@ Tests functionality without requiring Stockfish or display.
 
 import numpy as np
 import sys
+import traceback
 
 
 def test_piece_recognition():
@@ -141,12 +142,10 @@ def main():
         
     except AssertionError as e:
         print(f"\n✗ Test failed: {e}")
-        import traceback
         traceback.print_exc()
         return 1
     except Exception as e:
         print(f"\n✗ Unexpected error: {e}")
-        import traceback
         traceback.print_exc()
         return 1
 

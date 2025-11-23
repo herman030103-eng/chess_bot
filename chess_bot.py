@@ -6,9 +6,10 @@ Main Chess Bot Application
 import json
 import time
 import sys
+import os
+import threading
 from pynput import keyboard
 from typing import Optional
-import threading
 
 from board_detector import capture_screenshot, process_screenshot_to_cells
 from piece_recognition import cells_to_fen
@@ -165,8 +166,6 @@ class ChessBot:
 
 def main():
     """Точка входа в приложение."""
-    import os
-    
     # Определяем путь к конфигу
     script_dir = os.path.dirname(os.path.abspath(__file__))
     config_path = os.path.join(script_dir, 'config.json')
